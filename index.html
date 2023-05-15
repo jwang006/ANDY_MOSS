@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Andy - MOSS</title>
+
+        <!-- including for some global styling -->
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+        <!-- if you have sub-pages think about adding a simple back button -->
+        <nav>
+            <a href="https://jwang006.github.io/portfolio/">HOME</a>
+        </nav>
+        <header class="documentation-header">
+            <section class="center-text">
+                <h1>MOSS</h1>
+                <h2>by Jing Wang</h6>
+              
+            </section>
+        </header>
+
+        <main class="documentation-page">
+            <section>
+                <div style="padding:56.25% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/822623961?h=44cb05a600&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="MOSS"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </section>
+
+            <section>
+                <h3>Introduction</h3>
+                <p align="justify">Moss is virtual 3D artefacts that mimics the attachment of moss on biological items. 
+                    It is a collection of simulation and recreation of natural ecological interdependence created with Diffusion-limited aggregation algorithm and geometry nodes.</p>
+            </section>
+            <section>
+                <h3>Concept and Background Research</h3>
+                
+                <p align="justify">As a nature enthusiast, I always observe unusually shaped trees. 
+                    I noticed that many trees have tumours of various sizes connected to their trunks.
+                     Although most of them have little effect on the tree's growth, the attachment relationship makes me question how such an ecosystem is built.
+                    </p>
+                <p align="justify">Nature's mystery and beauty are beyond description, and the rules of growth are tinted with unpredictability, displaying a mystical and dynamic. 
+                    The project was inspired by these trees (p1/p2/p3), using the moss — lichen plant as a case study to try to simulate and explain this dependency in computational art way.
+                     Lichens, other people's clothing, are always growing on the surface of other items. 
+                    Typically, Mosses, in their juvenile phases, often attach themselves to the surfaces of other things via wind, and then reproduce asexually, develop, and spread, producing a miniature ecosystem that lives in symbiosis with the dependents. </p>
+                
+                <!-- if you have a full width image try make it not too tall -->
+                <!-- <img src="./assets/images/concept.jpg"/> -->
+
+
+                <div class="flex-container flex-basis-third">
+                    <div class="flex-item">
+                        <img src="./assets/images/inspire1.png"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="./assets/images/inspire2.png"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="./assets/images/inspire3.png"/>
+                    </div>
+                </div>
+            
+            </section>
+
+
+            <!-- <section>
+                <h3>Technical Implementation</h3>
+                
+                <p align="justify">Dependencies usually require two objects. 
+                    Both the moss and the attached object to which it is connected are developed individually and then integrated in this design.</p>
+
+                    <p align="justify">Firstly, the moss code is divided into three sections: simulating attachment movements, defining attachment positions and volume modelling. 
+                        In this process, I referred to Daniel Shiffman's Diffusion-Limited Aggregation and Andy's boids and Multi-agent System, and Khamurai's volumetric modelling.</p>
+                        
+                    <p align="justify">Second, I studied tutorials provided by Benny Govaerts and Default Cube for modelling tree trunks.
+                            I utilised two techniques to trunk modelling: surface modelling to replicate a true trunk shape and curve extension to create a trunk form with organic features.</p>
+            </section> -->
+
+
+            <section>
+                <h3>Pipeline</h3>
+                    <img src="./assets/images/pipeline.png"/>
+            </section>
+
+            <section>
+                <h3>Pseudocode of Moss & Trunks</h3>
+                <img src="./assets/images/procedure1.png"/>
+                <img src="./assets/images/procedure2.png"/>
+            </section>
+            <section>
+                <h3>References</h3>
+                <ul>
+      
+                    <li>“Coding Challenge #34: Diffusion-Limited Aggregation.” n.d. Www.youtube.com. Accessed May 1, 2023. https://www.youtube.com/watch?v=Cl_Gjj80gPE.</li>
+                    <li>“Curling Curves with Geometry Nodes | Blender 3.1 Tutorial.” n.d. Www.youtube.com. Accessed May 1, 2023. https://www.youtube.com/watch?v=a_uaqvREsFw&t=360s.</li>
+                    <li>“LIVENODING Organic Mesh with Holes Using Geometry Nodes.” n.d. Www.youtube.com. Accessed May 1, 2023. https://www.youtube.com/watch?v=3StvubCgJ-k&t=936s.</li>
+                    <li>“Turning ANYTHING into Rocks - Blender Geometry Nodes.” n.d. Www.youtube.com. Accessed May 1, 2023. https://www.youtube.com/watch?v=QA13LPCZ3dM&t=844s.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+
+         </footer>
+    </body>
+</html>
