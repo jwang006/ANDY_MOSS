@@ -41,18 +41,13 @@
             <section>
                 <h3>Concept and Background Research</h3>
                 
-                <p align="justify">As a nature enthusiast, I always observe unusually shaped trees. 
-                    I noticed that many trees have tumours of various sizes connected to their trunks.
-                     Although most of them have little effect on the tree's growth, the attachment relationship makes me question how such an ecosystem is built.
-                    </p>
-                <p align="justify">Nature's mystery and beauty are beyond description, and the rules of growth are tinted with unpredictability, displaying a mystical and dynamic. 
-                    The project was inspired by these trees (p1/p2/p3), using the moss — lichen plant as a case study to try to simulate and explain this dependency in computational art way.
-                     Lichens, other people's clothing, are always growing on the surface of other items. 
-                    Typically, Mosses, in their juvenile phases, often attach themselves to the surfaces of other things via wind, and then reproduce asexually, develop, and spread, producing a miniature ecosystem that lives in symbiosis with the dependents. </p>
-                
-                <!-- if you have a full width image try make it not too tall -->
-                <!-- <img src="./assets/images/concept.jpg"/> -->
 
+                <p align="justify">
+                    Inspired by trees, this project, using the moss-lichen plant as a case study, attempts to simulate and explain this dependency in a computational art way. 
+                    The mystery and beauty of nature are indescribable, the rules of growth are colored by unpredictability, displaying a mystery and dynamism. 
+                    I noticed that many of the trees had tumors of varying sizes attached to their trunks. Lichens, other people's clothes, are always growing on the surface of other objects. 
+                    I attemptted to simulate nature algorithmically, building an artfect that combines digital with the natural
+                </p>
 
                 <div class="flex-container flex-basis-third">
                     <div class="flex-item">
@@ -66,34 +61,49 @@
                     </div>
                 </div>
             
+
+ 
+
+           
             </section>
 
 
-            <!-- <section>
+            <section>
                 <h3>Technical Implementation</h3>
+                <p style="font-size: 110%;">"Moss Growth” </em></p>
                 
-                <p align="justify">Dependencies usually require two objects. 
-                    Both the moss and the attached object to which it is connected are developed individually and then integrated in this design.</p>
+                <p align="justify">
+                    Diffusion-limited aggregation(DLA) is similar to the growth and reproduction of mosses. 
+                    It is an algorithm that simulates the process of growth and ends with a form of aggregates. 
+                    The simulation algorithm determines the threshold and aggregates through the random motion of multiple monomers. 
+                    In addition, threshold judgment is related to moss-dependent survival.
+                    </p>
+                <!-- if you have a full width image try make it not too tall -->
 
-                    <p align="justify">Firstly, the moss code is divided into three sections: simulating attachment movements, defining attachment positions and volume modelling. 
-                        In this process, I referred to Daniel Shiffman's Diffusion-Limited Aggregation and Andy's boids and Multi-agent System, and Khamurai's volumetric modelling.</p>
-                        
-                    <p align="justify">Second, I studied tutorials provided by Benny Govaerts and Default Cube for modelling tree trunks.
-                            I utilised two techniques to trunk modelling: surface modelling to replicate a true trunk shape and curve extension to create a trunk form with organic features.</p>
-            </section> -->
+                <p align="justify">I transformed the DLA algorithm from 2d to 3d and then grew it on the surface.</p>
+                <img src="./assets/images/DLA.png"/>
+                
+                
+                <p align="justify">
+                    Then I used geometry node in blender  to simulate the form of moss. 
+                    I studied shortest edge path and curling curves to find the best way to create moss textures. 
+                    Also, I tried lots of way to make trunk and organic body textures for moss.</p>
+                <img src="./assets/images/generation.png"/>
+           
+            </section>
 
 
             <section>
                 <h3>Pipeline</h3>
                     <img src="./assets/images/pipeline.png"/>
             </section>
-
+<!-- 
             <section>
                 <h3>Pseudocode of Moss & Trunks</h3>
                 <img src="./assets/images/procedure1.png"/>
                 <img src="./assets/images/procedure2.png"/>
-            </section>
-            <section>
+            </section> -->
+            <!-- <section>
                 <h3>References</h3>
                 <ul>
       
@@ -102,7 +112,7 @@
                     <li>“LIVENODING Organic Mesh with Holes Using Geometry Nodes.” n.d. Www.youtube.com. Accessed May 1, 2023. https://www.youtube.com/watch?v=3StvubCgJ-k&t=936s.</li>
                     <li>“Turning ANYTHING into Rocks - Blender Geometry Nodes.” n.d. Www.youtube.com. Accessed May 1, 2023. https://www.youtube.com/watch?v=QA13LPCZ3dM&t=844s.</li>
                 </ul>
-            </section>
+            </section> -->
         </main>
 
         <footer>
